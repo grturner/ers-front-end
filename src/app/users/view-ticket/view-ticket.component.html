@@ -24,7 +24,7 @@
           <td>{{ticket.status.status}}</td>
           <td>{{ticket.timeSubmitted | date:"short"}}</td>
           <td>{{ticket.timeResolved | date: "short"}}</td>
-          <td *ngIf="ticket.resolver != null">{{ticket.resolver.firstName + ticket.resolver.lastName}}</td>
+          <td *ngIf="ticket.resolver != null">{{ticket.resolver.firstName + ' ' + ticket.resolver.lastName}}</td>
           <td *ngIf="ticket.resolver == null"></td>
         </tr>
       </tbody>
